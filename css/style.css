@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,500&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+header {
+
+    background-color: rgb(67, 67, 245);
+    border: 2px solid red;
+    position: sticky;
+}
+
+.logo {
+    padding: auto;
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    padding: 14px;
+    margin: 0 15px;
+}
+
+nav {
+    display: flex;
+}
+
+nav ul li {
+    list-style: none;
+    padding: 0 13px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: rgb(166, 157, 157);
+    font-weight: bolder;
+}
+
+nav ul {
+    height: 65px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+
+}
+
+.search input {
+    width: 415px;
+    height: 25px;
+    margin: 0 16px 0 56px;
+}
+.search but{
+height:12px ;
+width: 12px;
+}
+.but{
+    padding: 5px 10px;
+    height: 15px;
+    width: 38px;
+    background-color: rgb(77, 77, 241);
+    color: black;
+    cursor: pointer;
+    border: 2px solid rgb(190, 190, 234);
+    font-family: 'Edu SA Beginner', cursive;
+font-family: 'Open Sans', sans-serif;
+
+}
+.but:hover{
+    font-weight: 700;
+}
+.buttons{
+    margin:0 0 0 72px ;
+}
+.log{
+    padding: 0 2px 0 2px;
+    margin: 0;
+    background-color: white;
+    color: rgb(77, 77, 241);
+    height: 25px;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-family: 'Edu SA Beginner', cursive;
+font-family: 'Open Sans', sans-serif;
+  }
+ .log:hover{
+    font-weight: bolder;
+ }
+ .sell{
+margin: 0 0 0 25px;
+ }
+ .seller{
+    background-color:rgb(67, 67, 245);
+    color: white;
+    border: 2px solid rgb(77, 77, 241);
+    cursor: pointer;
+    font-family: 'Edu SA Beginner', cursive;
+font-family: 'Open Sans', sans-serif;
+ }
+ .more{
+    margin: 0 0 0 25px;
+    width: 5px;
+    font-family: 'Edu SA Beginner', cursive;
+font-family: 'Open Sans', sans-serif;
+ }
+ .mores{
+    background-color: whitesmoke;
+    color: white;
+    width: 1254px;
+    font-family: 'Edu SA Beginner', cursive;
+font-family: 'Open Sans', sans-serif;
+cursor: pointer;
+ }
+ .cart{
+    margin: 0 0 0 140px;
+    
+ }
+ .carts{
+    background-color: whitesmoke;
+    color: blue;
+    width: 55px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-family: 'Edu SA Beginner', cursive;
+font-family: 'Open Sans', sans-serif;
+ }
+.cont {
+    background-color: white;
+    height: calc(100vh - 65px - 12vh);
+}
+.slider{
+    margin: 12px 20px 22px 25px;
+   display: inline-block;
+}
+.slid2{
+    display: inline-block;
+    margin: 12px 10px 12px 0;
+}
+
+.slid3{
+    display: inline-block;
+    margin: 12px 0px 12px 0;
+}
+h2{
+
+}
+.c1{
+    display: inline-block;
+margin:12px 30px 1px 50px;
+}
+h3{
+    color: rgb(243, 36, 36);
+}
+h4{
+    color: rgb(87, 242, 87);
+}
+.c2{
+    display: inline-block;
+    margin:12px 40px 1px 50px;
+    }
+    .c3{
+        display: inline-block;
+        margin:12px 40px 1px 50px;
+}
+.c4{
+    display: inline-block;
+    margin:12px 40px 1px 50px;
+}
+.c5{
+    display: inline-block;
+    margin:12px 40px 1px 50px;
+}
+footer {
+    height: 12vh;
+    color: white;
+    background-color: rgb(67, 67, 245);
+    font-family: 'Open Sans', sans-serif;
+}
+/* Original CSS styles */
+
+/* Add the following media queries for responsiveness */
+
+/* Responsive styles for smaller screens */
+@media only screen and (max-width: 768px) {
+    .search input {
+        width: 100%; /* Take up full width */
+        margin: 0 16px 0 0; /* Adjust margin for better spacing */
+    }
+
+    .buttons {
+        margin: 0;
+    }
+
+    .sell,
+    .more,
+    .cart {
+        display: none; /* Hide these elements on smaller screens */
+    }
+
+    nav ul {
+        flex-direction: column; /* Stack navigation items vertically */
+        align-items: flex-start;
+        height: auto;
+    }
+
+    nav ul li {
+        padding: 10px 0; /* Adjust padding for better spacing */
+    }
+
+    .slider,
+    .slid2,
+    .slid3 {
+        margin: 12px 0; /* Adjust margin for better spacing */
+    }
+
+    .cont {
+        height: auto; /* Adjust container height for better responsiveness */
+    }
+}
+
+/* Responsive styles for even smaller screens */
+@media only screen and (max-width: 480px) {
+    .logo img {
+        width: 80px; /* Adjust logo size for smaller screens */
+    }
+}
